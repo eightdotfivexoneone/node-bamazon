@@ -34,7 +34,7 @@
                 <% print.forEach(function (users) { %>
 
                 <div class="card m-3 bg-light" style="width: 18rem;" id=<%= users.user_id %>>
-                        <img class="card-img-top" src="default-person.jpg">
+                        <img class="card-img-top" <%- users.image_url %> >
                         <div class="card-body">
                           <h5 class="card-title"><%= users.user_first_name %></h5>
                           <p class="card-text"><%= users.user_last_name %></p>
